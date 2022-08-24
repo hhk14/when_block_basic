@@ -1,0 +1,23 @@
+pipeline
+{
+    agent 
+    {
+        label 'built-in'
+    }
+    
+    stages
+    {
+        stage ('build')
+        {
+            when
+        {
+            branch 'main'
+        }
+            steps
+            {
+                echo "this is build stage block"
+            }
+            
+        }
+    }
+}
